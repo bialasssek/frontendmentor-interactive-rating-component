@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="container">
+      <div class="rating__container">
+        <div class="rating__star-container">
+          <img src="images/icon-star.svg" alt="star" />
+        </div>
+        <h1 class="rating__title">How did we do?</h1>
+        <p class="rating__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating__number-container">
+          <div class="rating__number">1</div>
+          <div class="rating__number">2</div>
+          <div class="rating__number">3</div>
+          <div class="rating__number">4</div>
+          <div class="rating__number">5</div>
+        </div>
+        <button class="rating__submit">Submit</button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thankyou__container hidden">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt=""
+          class="thankyou__img"
+        />
+        <div class="thankyou__result">
+          You selected <span class="thankyou__result-number"></span> out of 5
+        </div>
+        <div class="thankyou__title">Thank you!</div>
+        <div class="thankyou__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </div>
+      </div>
+      <!-- Thank you state end -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
